@@ -9,9 +9,13 @@ body {
   background-color: #cce3de;
 }
 
+.ft-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .fs-set-nav {
   /* navbar font */
-  font-size: 10pt;
+  font-size: 9pt;
   font-weight: bold;
 }
 

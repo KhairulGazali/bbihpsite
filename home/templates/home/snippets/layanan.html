@@ -1,0 +1,39 @@
+{% load static %}
+<div class="container my-4">
+    <h2 class="display-5 text-center fs-3 px-5 fw-bold ft-ubuntu">Layanan Kami</h2>
+    <p class="text-center mx-5">BBIHP memanfaatkan teknologi terkini dalam memberikan layanan kepada stakeholder-nya untuk memastikan pelayanan terbaik dengan hasil yang optimal.</p>
+    <div class="row justify-content-evenly my-4">
+        <div class="col col-lg-2 col-md-6 m-1 border-top border-5 border-danger rounded-3">
+            <img src="{% static 'home/img/Science discovery_Outline.png' %} " width="150" class="rounded mx-auto d-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsa iure sint ut veritatis voluptatibus.</p>
+            <a class="btn btn-success text-center" href="{% url 'home:pengujian' %}" role="button">Pengujian</a>
+        </div>
+        <div class="col col-lg-2 col-md-6 m-1 border-top border-5 border-warning rounded-3">
+            <img src="{% static 'home/img/Data analyzing _Outline.png' %} " width="150" class="rounded mx-auto d-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsa iure sint ut veritatis voluptatibus.</p>
+            <a class="btn btn-success text-center" href="{% url 'home:sertifikasi' %}" role="button">Sertifikasi</a>
+        </div>
+        <div class="col col-lg-2 col-md-6 m-1 border-top border-5 border-info rounded-3">
+            <img src="{% static 'home/img/Team work_Outline.png' %} " width="150" class="rounded mx-auto d-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsa iure sint ut veritatis voluptatibus.</p>
+            <a class="btn btn-success text-center" href="#" role="button">Konsultasi Teknologi</a>
+        </div>
+        <div class="col col-lg-2 col-md-6 m-1 border-top border-5 border-secondary rounded-3">
+            <img src="{% static 'home/img/Pie chart _Outline.png' %} " width="150" class="rounded mx-auto d-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsa iure sint ut veritatis voluptatibus.</p>
+            <a class="btn btn-success text-center" href="#" role="button">Inkubator Bisnis</a>
+        </div>
+    <div class="row justify-content-evenly my-4">
+        <div class="col col-lg-2 col-md-6 m-1 border-top border-5 border-dark rounded-3">
+            <img src="{% static 'home/img/Graphic_Outline.png' %} " width="150" class="rounded mx-auto d-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsa iure sint ut veritatis voluptatibus.</p>
+            <a class="btn btn-success text-center" href="{% url 'home:kalibrasi' %}" role="button">Kalibrasi</a>
+        </div>
+        <div class="col col-lg-2 col-md-6 m-1 border-top border-5 border-primary rounded-3">
+            <img src="{% static 'home/img/DNA_Outline.png' %} " width="150" class="rounded mx-auto d-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsa iure sint ut veritatis voluptatibus.</p>
+            <a class="btn btn-success text-center" href="#" role="button">Produk Halal</a>
+        </div>
+    </div>
+    </div>
+</div>
