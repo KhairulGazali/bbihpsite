@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Font -->
+    {% include 'snippets/fonts.html' %}
+    <!-- Bootstrap CSS -->
+    {% include 'snippets/bootstrap.html' %} {% include 'snippets/bootstrap_icon.html' %}
+    <!-- CSS Saya -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {% include 'snippets/navbar.html' %}
+    <!-- Konten -->
+    {% block konten %} {% endblock %}
+    <!-- End of konten -->
+    {% include 'snippets/footer.html' %} 
+    {% include 'snippets/script_bootstrap.html' %} {% include 'snippets/jquery.html' %}
+  </body>
+</html>

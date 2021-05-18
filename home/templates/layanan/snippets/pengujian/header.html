@@ -1,0 +1,22 @@
+{% load static %}
+<div class="container-fluid bg-set-1">
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-6 ">
+        <div class="jumbotron">
+          <h2 class="fw-bold">Layanan Pengujian BBIHP</h2>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4" />
+          {% include 'layanan/snippets/pengujian/tabs.html' %}
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="{% static 'home/img/Analytics process_Monochromatic.png' %}" alt="layanan" class="img-fluid rounded float-end" width="300">
+      </div>
+    </div>
+  </div>
+</div>

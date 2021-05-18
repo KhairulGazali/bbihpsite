@@ -1,0 +1,34 @@
+/* Basics page CSS */
+body {
+  font-family: 'Crimson Text', serif;
+  /* setting warna font umum */
+  color: #081c15;
+}
+
+.bg-set-1 {
+  background-color: #cce3de;
+}
+
+.fs-set-nav {
+  /* navbar font */
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.dropdown-item {
+  /* dropdown navbar font */
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.bg-set-2 {
+  background-color: #a4c3b2;
+}
+
+.bg-set-3 {
+  background-color: #081c15;
+}
+
+.bg-set-4 {
+  background-color: #eaf4f4;
+}

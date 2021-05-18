@@ -1,0 +1,23 @@
+PENGGUNAAN PYTHON SHELL:
+
+import terlebih dahulu objek di model dari 'app.models'
+
+SYNTAX YANG DAPAT DIGUNAKAN:
+Class.objects.all() = menampilkan semua query set
+Class.objects.get( atribut = '...') = memilih 1 BUAH objek di db berdasarkan atribut, dapatberupa id atau atribut unik
+Class.objects.filter(atribut = '...') = meilih semua objek berdasarkan atrbut yang sama
+Class.objects.exclude (atribut = '...') = milih objek yang tidak memiliki atribut yang diinput di funct
+
+CONTOH SYNTAX:
+__model.py__
+class Indeks(models.Models):
+    tahun = 2021
+    data = 3.9
+
+__python shell__
+syntax ini akan menampilkan semua tahun objek di indeks
+
+for indek in Indeks:
+    indeks.tahun
+
+admin : khairul/08101997

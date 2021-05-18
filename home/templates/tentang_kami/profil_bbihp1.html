@@ -1,0 +1,26 @@
+{% extends 'base_home_page.html' %} {% load static%} {% include 'static/css/style.css' %} {% block konten %}
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-12">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="list-group list-group-flush list-bg" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active list-bg" id="list-sejarah-list" data-bs-toggle="list" href="#list-sejarah" role="tab" aria-controls="list-sejarah">Sejarah</a>
+          <a class="list-group-item list-group-item-action list-bg" id="list-visi-list" data-bs-toggle="list" href="#list-visi" role="tab" aria-controls="list-visi">Visi Misi</a>
+          <a class="list-group-item list-group-item-action list-bg" id="list-makna-list" data-bs-toggle="list" href="#list-makna" role="tab" aria-controls="list-makna">Makna Logo</a>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-12">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-sejarah" role="tabpanel" aria-labelledby="list-sejarah-list">{% include 'tentang_kami/snippets/sejarah.html' %}</div>
+          <div class="tab-pane fade" id="list-visi" role="tabpanel" aria-labelledby="list-visi-list">{% include 'tentang_kami/snippets/visi_misi.html' %}</div>
+          <div class="tab-pane fade" id="list-makna" role="tabpanel" aria-labelledby="list-makna-list">{% include 'tentang_kami/snippets/makna_logo.html' %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

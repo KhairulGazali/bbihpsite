@@ -1,0 +1,208 @@
+{% extends 'base_home_page.html' %}
+{% load static%}
+{% include 'home/css/style.css' %}
+<!-- konten-->
+{% block konten %}
+<!-- Jumbotron -->
+<div class="container-fluid bg-set-1">
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-6 my-auto pt-5" id="navbarMargin">
+          <br>
+          <br>
+          <br>
+          <h1 class="display-6 fw-bold">Satu Solusi untuk Industri</h1>
+          <p class="fs-4"><span class="fw-bold">Balai Besar Industri Hasil Perkebunan,</span> menyediakan berbagai solusi untuk pertumbuhan dan pengembangan industri di Indonesia.</p>
+          <form class="d-flex">
+            <button class="btn btn-light btn-outline-success" type="submit">Telusuri!</button>
+          </form>
+        </div>
+        <div class="col-lg-6 p-0">
+          <img src="{% static 'home/img/Brainstorming session _Two Color.png' %}" alt="one-solution" class="img-fluid rounded float-end" width="600px" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of Jumbotron -->
+<!-- Layanan Kami -->
+<div class="container my-5">
+  <h2 class="display-5 text-center fs-3 px-5 fw-bold">Layanan Kami</h2>
+  <p class="text-center mx-5">BBIHP memanfaatkan teknologi terkini dalam memberikan layanan kepada stakeholder-nya untuk memastikan pelayanan terbaik dengan hasil yang optimal.</p>
+  <!-- Row 1 -->
+  <div class="row my-5 justify-content-evenly">
+    <div class="col-md-3 col-sm-6 bg-set-4 border-light shadow p-3 mx-1 my-3">
+      <img src="{% static 'home/img/perancangan.png' %}" alt="" width="90" class="rounded mx-auto d-block" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, assumenda. Placeat, soluta deserunt! Recusandae, libero sunt. Hic delectus odit ea odio est? Similique, quidem sunt.</p>
+      <hr />
+      <div class="col text-center p-0">
+        <a class="btn btn-outline-success" href="#" role="button">Perancangan Teknologi Proses 4.0</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-set-4 border-light shadow mx-1 my-3">
+      <img src="{% static 'home/img/informasi-pengembangan.png' %}" alt="" width="90" class="rounded mx-auto d-block" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, assumenda. Placeat, soluta deserunt! Recusandae, libero sunt. Hic delectus odit ea odio est? Similique, quidem sunt.</p>
+      <hr />
+      <div class="col text-center p-0">
+        <a class="btn btn-outline-success" href="#" role="button">Informasi Pengembangan Industri</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-set-4 border-light shadow p-3 mx-1 my-3">
+      <img src="{% static 'home/img/pengujian.png' %}" alt="" width="90" class="rounded mx-auto d-block" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, assumenda. Placeat, soluta deserunt! Recusandae, libero sunt. Hic delectus odit ea odio est? Similique, quidem sunt.</p>
+      <hr />
+      <div class="col text-center p-0">
+        <a class="btn btn-outline-success" href="#" role="button">Standarisasi, Sertifikasi dan Pengujian</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-set-4 border-light shadow p-3 mx-1 my-3">
+      <img src="{% static 'home/img/halal.png' %}" alt="" width="90" class="rounded mx-auto d-block" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, assumenda. Placeat, soluta deserunt! Recusandae, libero sunt. Hic delectus odit ea odio est? Similique, quidem sunt.</p>
+      <hr />
+      <div class="col text-center p-0">
+        <a class="btn btn-outline-success" href="#" role="button">Pengujian Produk Halal</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-set-4 border-light shadow p-3 mx-1 my-3">
+      <img src="{% static 'home/img/Team building _Monochromatic.png'%}" alt="" width="90" class="rounded mx-auto d-block" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, assumenda. Placeat, soluta deserunt! Recusandae, libero sunt. Hic delectus odit ea odio est? Similique, quidem sunt.</p>
+      <hr />
+      <div class="col text-center p-0">
+        <a class="btn btn-outline-success" href="#" role="button">Inkubator Industri</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-set-4 border-light shadow p-3 mx-1 my-3">
+      <img src="{% static 'home/img/Data and settings_Monochromatic.png' %}" alt="" width="90" class="rounded mx-auto d-block" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, assumenda. Placeat, soluta deserunt! Recusandae, libero sunt. Hic delectus odit ea odio est? Similique, quidem sunt.</p>
+      <hr />
+      <div class="col text-center p-0">
+        <a class="btn btn-outline-success" href="#" role="button">Kios Merek</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Komitmen BBIHP -->
+<div class="container-fluid bg-set-1">
+  <div class="container py-5">
+    <h2 class="display-5 text-center fs-3 fw-bold px-5">Komitmen Kami</h2>
+    <p class="text-center mx-5">BBIHP berkomitmen untuk melaksanakan agenda reformasi birokrasi yang diagendakan oleh Kemenpan RB.</p>
+    <div class="row mt-5">
+      <!-- 1 kolom -->
+      <div class="col-md-1 col-sm-2 d-flex justify-content-end">
+        <i class="bi bi-globe2" style="font-size: 2rem; color: black"></i>
+      </div>
+      <div class="col-md-3 col-sm-8">
+        <h4>Menuju WBBM</h4>
+        <hr width="280" />
+        <p>BBIHP telah mendapatkan predikat WBK (Wilayah Bebas Korupsi) pada tahun 2018. Sekarang sedang mempersiapkan diri menuju WBBM (Wilayah Birokrasi Bersih Melayani)</p>
+      </div>
+      <!--end 1 kolom -->
+      <div class="col-md-1 col-sm-2 d-flex justify-content-end">
+        <i class="bi bi-umbrella" style="font-size: 2rem; color: black"></i>
+      </div>
+      <div class="col-md-3 col-sm-8">
+        <h4>Dukungan Terbaik</h4>
+        <hr width="280" />
+        <p>Dalam memberikan setiap layanan kepada para stake holdernya, BBIHP telah menerapkan prinsip-prinsip Pelayanan Prima.</p>
+      </div>
+      <div class="col-md-1 col-sm-2 d-flex justify-content-end"><i class="bi bi-people" style="font-size: 2rem; color: black"></i></div>
+      <div class="col-md-3 col-sm-8">
+        <h4>Budaya Inovasi</h4>
+        <hr width="280" />
+        <p>Setiap insan BBIHP selalu dituntut untuk memberikan inovasi-inovasi terbaru dalam memberikan pelayanan.</p>
+      </div>
+    </div>
+  </div>
+  <!-- end Komitmen BBIHP -->
+  <!-- Keunggulan BBIHP -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 my-auto">
+        <h4>Keunggulan BBIHP</h4>
+        <hr />
+        <p>BBIHP adalah unit pelaksana teknis di bawah Badan Penelitian dan Pengembangan Industri Kementerian Perindustrian yang berada di Makassar, Sulawesi Selatan.</p>
+        <div class="row my-3">
+          <div class="col-1 d-flex justify-content-end"><i class="bi bi-cursor-fill"></i></div>
+          <div class="col-10">Memiliki SDM kompeten dengan berbagai bidang keahlian dan keterampilan</div>
+        </div>
+        <div class="row my-3">
+          <div class="col-1 d-flex justify-content-end"><i class="bi bi-cursor-fill"></i></div>
+          <div class="col-10">Menerapkan berbagai sistem manajemen mutu seperti ISO 9000, ISO 17025, ISO 17065 dan Pranata Litbang.</div>
+        </div>
+        <div class="row my-3">
+          <div class="col-1 d-flex justify-content-end"><i class="bi bi-cursor-fill"></i></div>
+          <div class="col-10">Memiliki sarana dan prasarana yang sangat baik untuk menunjang semua aktivitas yang dilakukan.</div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0">
+        <img src="{% static 'home/img/Achievement _Isometric.png' %}" alt="" class="img-fluid p-3 rounded float-end" width="600px" />
+      </div>
+    </div>
+  </div>
+  <!-- end Keunggulan BBIHP -->
+</div>
+<!-- Tetsimoni dan Pelanggang -->
+<div class="container-fluid">
+  <div class="container my-3">
+    <h2 class="display-5 text-center fs-3 fw-bold px-5">Pelanggang Kami</h2>
+    <!-- Kolom ini untuk karosel logo pelanggan bbihp -->
+    <div class="row align-items-center">
+      <div class="col-lg-6 px-5">
+        <!-- testimone Pelanggang -->
+        <div id="carouselTestimoniPelanggang" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'home/img/Analytics team_Monochromatic.png' %}" class="img-fluid d-block" alt="..." width="450px" />
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'home/img/Analytics process_Monochromatic.png' %}" class="img-fluid d-block" alt="..." width="450px" />
+            </div>
+            <div class="carousel-item">
+              <img src="{% static '/home/img/Analytics process_Isometric.png' %}" class="img-fluid d-block" alt="..." width="450px" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimoniPelanggang" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimoniPelanggang" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- end of testimone Pelanggang -->
+      <div class="col-lg-6">
+        <!--        Tabel Indeks Kepuasan-->
+        <table class="table table-hover caption-top">
+          <caption>
+            Indeks Kepuasan Pelayanan 2018 - 2020
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Tahun</th>
+              <th scope="col">Indeks Kepuasan Pelayanan</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for indek in indeks %}
+            <tr>
+              <td>{{ forloop.counter }}</td>
+              <td>{{ indek.tahun_pelayanan }}</td>
+              <td>{{ indek.indeks_kepuasan }}</td>
+            {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+        <!--        end ofTabel Indeks Kepuasan-->
+      </div>
+    </div>
+    <!-- end of Tetsimoni dan Pelanggang -->
+  </div>
+  <!-- Pelanggang Kami -->
+  <!--end of Pelanggang Kami -->
+  <!--akhir dari konten-->
+</div>
+{% endblock %}
