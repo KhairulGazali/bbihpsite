@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import ServiceIndeks
+from .models import BussinesIncubator, Calibration, Consultation, Sample, Service, ServiceIndeks
 
 
 # Create your views here.
@@ -34,8 +34,18 @@ def profil_pejabat(request):
 
 def pengujian(request):
     """ Menampilkan pengujian """
+    sampel_pangan = Sample.objects.filter(kategori='P')
+    sampel_pertanian = Sample.objects.filter(kategori='p')
+    sampel_mineral = Sample.objects.filter(kategori='m')
+    sampel_maritim = Sample.objects.filter(kategori='M')
+    sampel_lainnya = Sample.objects.filter(kategori='X')
     contex = {
-        'title': 'Layanan BBIHP | Pengujian'
+        'title': 'Layanan BBIHP | Pengujian',
+        'sample_pangan': sampel_pangan,
+        'sample_pertanian': sampel_pertanian,
+        'sample_mineral': sampel_mineral,
+        'sample_maritim': sampel_maritim,
+        'sample_lainnya': sampel_lainnya,
     }
     return render(request, 'layanan/pengujian.html', contex)
 

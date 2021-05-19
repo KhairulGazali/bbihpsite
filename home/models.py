@@ -23,7 +23,6 @@ class Sample(models.Model):
         ('P', 'Pangan'),
         ('m', 'Mineral'),
         ('M', 'Maritim'),
-        ('A', 'Agro'),
         ('X', 'Lain-Lain'),
     )
     kategori = models.CharField(max_length=1, choices=CATEGORY, default='X')
@@ -72,5 +71,3 @@ class Training(models.Model):
 
     def __str__(self):
         return str(self.nama)
-
-
