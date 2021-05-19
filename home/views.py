@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
-from .models import IndeksKepuasanPelayanan
+from .models import ServiceIndeks
 
 
 # Create your views here.
 def home(request):
     """Menampilkan halaman beranda, ingin ditambahkan fitur agar indeks kepuasan pelanggan dapat
     ditambahkan dari database"""
-    indeks = IndeksKepuasanPelayanan.objects.all()
+    indeks = ServiceIndeks.objects.all()
 
     context = {
         'title': 'Selamat Datang | BBIHP Kemenperin',
