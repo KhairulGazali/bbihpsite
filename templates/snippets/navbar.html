@@ -13,18 +13,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home:home' %}">Beranda</a>
+          <a class="nav-link ms-2 active" aria-current="page" href="{% url 'home:home' %}">Beranda</a>
         </li>
-        <!-- Drop Down Menu -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tentang Kami </a>
+          <a class="nav-link ms-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tentang Kami </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{% url 'home:profil_bbihp' %}">Profil BBIHP</a></li>
             <li><a class="dropdown-item" href="{% url 'home:profil_pejabat' %}">Profil Pejabat</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Informasi Publik </a>
+          <a class="nav-link ms-2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Informasi Publik </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Kegiatan dan Kinerja</a></li>
             <li><a class="dropdown-item" href="#">Data Keuangan</a></li>
@@ -32,32 +31,31 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
+          <a class="nav-link ms-2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{% url 'home:pengujian' %}">Pengujian</a></li>
             <li><a class="dropdown-item" href="{% url 'home:sertifikasi' %}">Sertifikasi</a></li>
-            <li><a class="dropdown-item" href="{% url 'home:sertifikasi' %}">Konsultasi Teknologi</a></li>
+            <li><a class="dropdown-item" href="{% url 'home:konsultasi' %}">Konsultasi Teknologi</a></li>
             <li><a class="dropdown-item" href="{% url 'home:sertifikasi' %}">Inkubator Bisnis</a></li>
             <li><a class="dropdown-item" href="{% url 'home:kalibrasi' %}">Kalibrasi</a></li>
             <li><a class="dropdown-item" href="{% url 'home:sertifikasi' %}">Produk Halal</a></li>
             <li><a class="dropdown-item" href="{% url 'home:sertifikasi' %}">Pelatihan</a></li>
-            <li><a class="dropdown-item" href="{% url 'home:sertifikasi' %}">Kerjasama Riset</a></li>
+            <li><a class="dropdown-item" href="{% url 'home:kerjasama_riset' %}">Kerjasama Riset</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Publikasi </a>
+          <a class="nav-link ms-2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Publikasi </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Berita</a></li>
             <li><a class="dropdown-item" href="#">Geleri Kegiatan</a></li>
           </ul>
         </li>
-        <!-- end Drop Down Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontak Kami</a>
+          <a class="nav-link ms-2" href="#">Kontak Kami</a>
         </li>
 <!--        ADMIN MENU, DISABLE NANTI PADA SAAT DEPLOY-->
         <li class="nav-item">
-          <a class="nav-link" href="#">Masuk</a>
+          <a class="nav-link ms-2" href="#">Masuk</a>
         </li>
       </ul>
     </div>

@@ -64,3 +64,19 @@ def sertifikasi(request):
         'title': 'Layanan BBIHP | Sertifikasi'
     }
     return render(request, 'layanan/sertifikasi.html', contex)
+
+
+def kosultasi(request):
+    """ Menampilkan konsultasi """
+    contex = {
+        'title': 'Layanan BBIHP | Konsultasi'
+    }
+    return render(request, 'layanan/konsultasi.html', contex)
+
+
+def kerjasama_riset(request):
+    """ Menampilkan kerjasama riset """
+    contex = {
+        'title': 'Layanan BBIHP | Kerjasama Riset'
+    }
+    return render(request, 'layanan/kerjasama_riset.html', contex)
