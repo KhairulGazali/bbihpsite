@@ -80,3 +80,11 @@ def kerjasama_riset(request):
         'title': 'Layanan BBIHP | Kerjasama Riset'
     }
     return render(request, 'layanan/kerjasama_riset.html', contex)
+
+
+def inkubator(request):
+    """ Menampilkan inkubator bisinis """
+    contex = {
+        'title': 'Layanan BBIHP | Inkubator Bisnis'
+    }
+    return render(request, 'layanan/inkubator.html', contex)
