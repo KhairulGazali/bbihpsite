@@ -88,3 +88,11 @@ def inkubator(request):
         'title': 'Layanan BBIHP | Inkubator Bisnis'
     }
     return render(request, 'layanan/inkubator.html', contex)
+
+
+def pelatihan(request):
+    """ Menampilkan pelatihan """
+    contex = {
+        'title': 'Layanan BBIHP | Pelatihan'
+    }
+    return render(request, 'layanan/pelatihan.html', contex)
