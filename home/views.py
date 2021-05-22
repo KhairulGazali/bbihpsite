@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import BussinesIncubator, Calibration, Certification, Consultation, Sample, ServiceIndeks
+from .models import BussinesIncubator, Calibration, Certification, Consultation, Sample, ServiceIndeks, Training
 
 
 # Create your views here.
@@ -53,35 +53,37 @@ def pengujian(request):
 def kalibrasi(request):
     """ Menampilkan kalibrasi """
     semua_alat = Calibration.objects.all()
-    contex = {
+    context = {
         'title': 'Layanan BBIHP | Kalibrasi',
-        'semua_alat' : semua_alat
+        'semua_alat': semua_alat
     }
-    return render(request, 'layanan/kalibrasi.html', contex)
+    return render(request, 'layanan/kalibrasi.html', context)
 
 
 def sertifikasi(request):
     """ Menampilkan sertifikasi """
-    contex = {
+    context = {
         'title': 'Layanan BBIHP | Sertifikasi'
     }
-    return render(request, 'layanan/sertifikasi.html', contex)
+    return render(request, 'layanan/sertifikasi.html', context)
 
 
 def kosultasi(request):
     """ Menampilkan konsultasi """
-    contex = {
-        'title': 'Layanan BBIHP | Konsultasi'
+    jasa_konsul = Consultation.objects.all()
+    context = {
+        'title': 'Layanan BBIHP | Konsultasi',
+        'jasa_konsul': jasa_konsul
     }
-    return render(request, 'layanan/konsultasi.html', contex)
+    return render(request, 'layanan/konsultasi.html', context)
 
 
 def kerjasama_riset(request):
     """ Menampilkan kerjasama riset """
-    contex = {
+    context = {
         'title': 'Layanan BBIHP | Kerjasama Riset'
     }
-    return render(request, 'layanan/kerjasama_riset.html', contex)
+    return render(request, 'layanan/kerjasama_riset.html', context)
 
 
 def inkubator(request):
@@ -94,7 +96,9 @@ def inkubator(request):
 
 def pelatihan(request):
     """ Menampilkan pelatihan """
+    jasa_pelatihan = Training.objects.all()
     contex = {
-        'title': 'Layanan BBIHP | Pelatihan'
+        'title': 'Layanan BBIHP | Pelatihan',
+        'jasa_pelatihan' : jasa_pelatihan
     }
     return render(request, 'layanan/pelatihan.html', contex)

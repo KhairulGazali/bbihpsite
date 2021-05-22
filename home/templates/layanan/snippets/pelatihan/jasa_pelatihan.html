@@ -4,9 +4,12 @@
     <div class="col-lg-9 col-md">
       <h4 class="border-start border-5 border-primary ps-2 ft-ubuntu  fw-bold">Jasa Pelatihan</h4>
       <ul>
-        <li> Pelatihan Sistem Manajemen</li>
-        <li> Pelatihan Pangan dan Non Pangan</li>
-        <li> Pelatihan Teknis Analisis Kimia dan Laboratorium</li>
+         {% for pelatihan in jasa_pelatihan %}
+        <li>{{ pelatihan.nama }}</li>
+          <ul class="fst-italic text-muted list-unstyled">
+              <li>{{ pelatihan.keterangan }}</li>
+          </ul>
+          {%  endfor %}
       </ul>
     </div>
     <div class="col-lg-3 col-md">

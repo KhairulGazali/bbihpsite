@@ -51,7 +51,7 @@ class Consultation(models.Model):
     keterangan = models.TextField(blank=True, null=True, help_text='Masukkan keterangan topik konsultasi')
 
     def __str__(self):
-        return str(self.nama)
+        return str(self.nama[:15])
 
 
 class BussinesIncubator(models.Model):
