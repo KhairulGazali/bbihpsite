@@ -8,35 +8,35 @@
         limbah industri dengan mengacu pada standar Nasional Indonesia atau Standar Internasional lainnya.
       </p>
       <p>Diantara kemampuan pengujian yang dimiliki:</p>
-      <ul class="list-unstyled">
+      <ul class="">
         <li >Pengujian Produk Pangan</li>
         <ul>
           {% for sampel in sampel_pangan %}
-            <li class="fw-normal">{{ sampel.nama }}</li>
+            <li class="fw-normal">{{ sampel.nama }} ({{ sampel.sni }})</li>
           {% endfor %}
         </ul>
         <li>Pengujian Produk Agro</li>
         <ul>
           {% for sampel in sampel_pertanian %}
-            <li class="fw-normal">{{ sampel.nama }}</li>
+            <li class="fw-normal">{{ sampel.nama }} ({{ sampel.sni }})</li>
           {% endfor %}
         </ul>
         <li>Pengujian Produk Mineral</li>
         <ul>
           {% for sampel in sampel_mineral %}
-            <li class="fw-normal">{{ sampel.nama }}</li>
+            <li class="fw-normal">{{ sampel.nama }} ({{ sampel.sni }})</li>
           {% endfor %}
         </ul>
         <li>Pengujian Produk Maritim</li>
         <ul>
           {% for sampel in sampel_maritim %}
-            <li class="fw-normal">{{ sampel.nama }}</li>
+            <li class="fw-normal">{{ sampel.nama }} ({{ sampel.sni }})</li>
           {% endfor %}
         </ul>
         <li>Lainnya</li>
         <ul>
           {% for sampel in sampel_lainnya %}
-            <li class="fw-normal">{{ sampel.nama }}</li>
+            <li class="fw-normal">{{ sampel.nama }} ({{ sampel.sni }})</li>
           {% endfor %}
         </ul>
       </ul>

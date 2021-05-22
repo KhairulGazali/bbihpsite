@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import BussinesIncubator, Consultation, Calibration, Sample, Service,  ServiceIndeks,  Training
+from .models import BussinesIncubator, Certification, Consultation, Calibration, Sample, ServiceIndeks, Training
 
 
 # Register your models here.
@@ -20,18 +20,12 @@ class SampleAdmin(admin.ModelAdmin):
 admin.site.register(Sample, SampleAdmin)
 
 
-class ServiceAdmin(admin.ModelAdmin):
-    list_display = ('nama',)
-
-
-admin.site.register(Service, ServiceAdmin)
-
-
 class ConsultationAdmin(admin.ModelAdmin):
     list_display = ('nama',)
 
 
 admin.site.register(Consultation, ConsultationAdmin)
 admin.site.register(BussinesIncubator)
-admin.site.register(Training)
+admin.site.register(Certification)
 admin.site.register(Calibration)
+admin.site.register(Training)

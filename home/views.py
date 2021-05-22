@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import BussinesIncubator, Calibration, Consultation, Sample, Service, ServiceIndeks
+from .models import BussinesIncubator, Calibration, Certification, Consultation, Sample, ServiceIndeks
 
 
 # Create your views here.
@@ -39,21 +39,23 @@ def pengujian(request):
     sampel_mineral = Sample.objects.filter(kategori='m')
     sampel_maritim = Sample.objects.filter(kategori='M')
     sampel_lainnya = Sample.objects.filter(kategori='X')
-    contex = {
+    context = {
         'title': 'Layanan BBIHP | Pengujian',
-        'sample_pangan': sampel_pangan,
-        'sample_pertanian': sampel_pertanian,
-        'sample_mineral': sampel_mineral,
-        'sample_maritim': sampel_maritim,
-        'sample_lainnya': sampel_lainnya,
+        'sampel_panga': sampel_pangan,
+        'sampel_pertanian': sampel_pertanian,
+        'sampel_mineral': sampel_mineral,
+        'sampel_maritim': sampel_maritim,
+        'sampel_lainnya': sampel_lainnya,
     }
-    return render(request, 'layanan/pengujian.html', contex)
+    return render(request, 'layanan/pengujian.html', context)
 
 
 def kalibrasi(request):
     """ Menampilkan kalibrasi """
+    semua_alat = Calibration.objects.all()
     contex = {
-        'title': 'Layanan BBIHP | Kalibrasi'
+        'title': 'Layanan BBIHP | Kalibrasi',
+        'semua_alat' : semua_alat
     }
     return render(request, 'layanan/kalibrasi.html', contex)
 
