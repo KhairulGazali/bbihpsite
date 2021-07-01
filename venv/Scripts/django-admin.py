@@ -1,4 +1,4 @@
-#!c:\khairul\balai besar industri hasil perkebunan\2021\programming\belajar django\bbihpsite\venv\scripts\python.exe
+#!c:\khairul\balai besar industri hasil perkebunan\2021\programming\belajar django\2. project bbihp\bbihpsite\bbihpsite\venv\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

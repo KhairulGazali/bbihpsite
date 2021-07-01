@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Khairul\Balai Besar Industri Hasil Perkebunan\2021\Programming\Belajar Django\bbihpsite\venv
+set VIRTUAL_ENV=C:\Khairul\Balai Besar Industri Hasil Perkebunan\2021\Programming\Belajar Django\2. Project BBIHP\bbihpsite\bbihpsite\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
